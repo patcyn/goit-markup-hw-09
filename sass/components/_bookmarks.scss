@@ -1,0 +1,28 @@
+.main-portfolio {
+  background-color: $whiteColor;
+}
+.bookmarks-section {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 50px;
+  justify-content: center;
+  &__buttons {
+    color: $blackColor;
+    background-color: $whiteColorButton;
+    line-height: 1.6;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    padding: 6px 22px;
+    font-weight: 500;
+  }
+  &__buttons:hover,
+  &__buttons:focus {
+    outline: none !important;
+    background-color: $blueColorPointer;
+    color: $whiteColor;
+    cursor: pointer;
+    box-shadow: $boxShadowButton;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

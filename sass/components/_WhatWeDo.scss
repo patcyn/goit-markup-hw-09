@@ -1,0 +1,30 @@
+.what-we-do {
+  display: none;
+}
+.what-we-do-section {
+  display: flex;
+  gap: 30px;
+  &__picture {
+    position: relative;
+    display: inline-flex;
+  }
+  &__title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: $backgroundColorWhatwedo;
+    color: $whiteColor;
+    bottom: 0;
+    padding: 27px 90px;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+}
+@media (min-width: 1200px) {
+  .what-we-do {
+    display: flex;
+    text-align: center;
+  background-color: $whiteColor;
+  }
+}

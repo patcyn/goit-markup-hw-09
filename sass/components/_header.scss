@@ -1,0 +1,182 @@
+header {
+  border-bottom: 1px solid ;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: $whiteColor;
+  font-weight: 500;
+  padding: 24px 0;
+
+  &__nav,
+  .navigation,
+  .contact {
+    display: flex;
+    align-items: center;
+  }
+}
+.navigation *,
+.contact * {
+  display: none;
+}
+.logo {
+  font-family: $ralewayFontFamily;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: $blueColorPointer;
+  text-decoration: none;
+
+  &__accent {
+    color: $blackColorLink;
+  }
+}
+// .navigation {
+//   display: flex;
+//   align-items: center;
+
+//   &__elements {
+//     display: flex;
+//     gap: 46px;
+//   }
+//   &__link {
+//     color: $blackColor;
+//     line-height: 1.15;
+//     letter-spacing: 0.02em;
+//     text-decoration: none;
+
+//     &--underline::after {
+//       content: "";
+//       display: block;
+//       position: absolute;
+//       width: 58px;
+//       height: 4px;
+//       border-radius: 2px;
+//       top: 77.5px;
+
+//       background-color: $blueColorPointer;
+//     }
+//     &--underline {
+//       color: $blueColorPointer;
+//     }
+
+//     &:hover,
+//     &:focus,
+//     &:active {
+//       outline: none !important;
+//       color: $blueColorPointer;
+//       cursor: pointer;
+//       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     }
+//   }
+// }
+// .contact {
+//   display: flex;
+//   gap: 50px;
+//   align-items: center;
+
+//   &__links {
+//     display: flex;
+//     align-items: center;
+//     color: $greyColor;
+//     line-height: 1.15;
+//     letter-spacing: 0.02em;
+//     text-decoration: none;
+//     gap: 10px;
+//     fill: $greyColor;
+
+//     &:hover,
+//     &:focus {
+//       outline: none !important;
+//       color: $blueColorPointer;
+//       fill: $blueColorPointer;
+//       cursor: pointer;
+//       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     }
+//   }
+// }
+// .address {
+//   display: flex;
+//   flex-flow: column;
+//   color: $greyColorAddress;
+//   line-height: 1.7;
+//   text-decoration: none;
+// }
+@media (min-width: 1200px){
+.navigation {
+  display: flex;
+  align-items: center;
+
+  &__elements {
+    display: flex;
+    gap: 46px;
+  }
+  &__link {
+    color: $blackColor;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    &--underline::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 58px;
+      height: 4px;
+      border-radius: 2px;
+      top: 77.5px;
+
+      background-color: $blueColorPointer;
+    }
+    &--underline {
+      color: $blueColorPointer;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      outline: none !important;
+      color: $blueColorPointer;
+      cursor: pointer;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+.contact {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+
+  &__links {
+    display: flex;
+    align-items: center;
+    color: $greyColor;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    gap: 10px;
+    fill: $greyColor;
+
+    &:hover,
+    &:focus {
+      outline: none !important;
+      color: $blueColorPointer;
+      fill: $blueColorPointer;
+      cursor: pointer;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+.address {
+  display: flex;
+  flex-flow: column;
+  color: $greyColorAddress;
+  line-height: 1.7;
+  text-decoration: none;
+}
+}

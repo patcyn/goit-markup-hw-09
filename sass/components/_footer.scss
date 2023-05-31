@@ -1,0 +1,157 @@
+.footer {
+  background-color: $backgroundColorFooter;
+  width: 100%;
+  display: block;
+  text-align: center;
+  justify-content: center;
+
+  &__table {
+    display: block;
+    text-align: center;
+    justify-content: center;
+
+    // column-gap: 70px;
+  }
+  &__logo {
+    color: $blueColorPointer;
+    font-size: 26px;
+    font-family: Raleway;
+    font-weight: 700;
+    line-height: 1.18;
+    text-decoration: none;
+    padding-right: 93px;
+    display: flex;
+    justify-content: center;
+
+    &--white {
+      color: $whiteColor;
+    }
+  }
+  &__container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  &__address {
+    color: $whiteColor;
+    line-height: 1.7;
+    text-decoration: none;
+    font-style: normal;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 9px;
+  }
+  // &__box {
+  //   margin-left: 70px;
+  // }
+  &__heading {
+    color: #eeeeee;
+    padding-bottom: 20px;
+    padding-top: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-top: 60px;
+  }
+  &__links {
+    display: flex;
+    flex-flow: column;
+  }
+  &__contact {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.7;
+    text-decoration: none;
+  }
+}
+.icon {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  text-align: center;
+  &__box {
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+
+    align-items: center;
+    background: $backgroundColorIcon;
+    fill: $colorHeadingWhite;
+
+    &:hover,
+    &:focus {
+      outline: none !important;
+      fill: $colorHeadingWhite;
+      background: $blueColorPointer;
+      border-radius: 50%;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+
+.newsletter {
+  color: $colorHeadingWhite;
+  padding-bottom: 20px;
+  padding-top: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+display: flex;
+    justify-content: center;
+  &__icon {
+    fill: $whiteColor;
+    position: absolute;
+    right: 28px;
+    top: 13px;
+  }
+  &__button {
+    position: absolute;
+    background-color: $blueColorPointer;
+    color: $whiteColor;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    padding-right: 42px;
+  }
+  &__input {
+    border: 1px solid $borderColor;
+    border-radius: 4px;
+    background-color: $backgroundColor;
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    color: $colorHeadingWhite;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer__table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 120px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__table {
+    display: flex;
+    gap: 70px;
+  }
+}
+@media not (min-width: 768px) {
+  .newsletter__input {
+    display: block;
+    margin: 0 auto;
+  }
+  .newsletter__button {
+    margin-top: 30px;
+  }
+}

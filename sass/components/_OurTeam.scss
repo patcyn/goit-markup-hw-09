@@ -1,0 +1,78 @@
+.background-our-team {
+  background-color: $backgroundColorOutTeam;
+  text-align: center;
+  width: 100%;
+}
+.our-team {
+  display: block;
+  // gap: 30px;
+  
+  &__card {
+    background-color: $whiteColor;
+    box-shadow: $boxShadowModal;
+    border-radius: 0px 0px 4px 4px;
+    width: 270px;
+  }
+}
+.card {
+  padding: 30px 30px;
+  margin-bottom: 30px;
+  &__name {
+    color: $blackColor;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  &__icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  &__position {
+    color: $greyColor;
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: 400;
+    line-height: 19px;
+    padding-top: 10px;
+  }
+  &__circle {
+    display: flex;
+    fill: $colorCircleOurTeam;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  &__circle:hover,
+  &__circle:focus {
+    outline: none !important;
+    fill: $whiteColor;
+    background: $blueColorPointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .our-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  .card {
+    flex-basis: calc((100% - 30px) / 2);
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .our-team {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+  }
+  .card {
+    margin-bottom: 0;
+  }
+}
